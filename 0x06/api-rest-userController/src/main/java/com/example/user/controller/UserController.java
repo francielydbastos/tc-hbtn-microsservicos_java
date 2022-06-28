@@ -19,7 +19,7 @@ public class UserController {
             throw new UserIdException(String.valueOf(id));
         }
 
-        return "You have entered invalid ID";
+        return "You have entered valid ID";
     }
 
     @GetMapping("/user-name/{userName}")
@@ -29,7 +29,7 @@ public class UserController {
             throw new UserNameException(userName);
         }
 
-        return "You have entered invalid USERNAME";
+        return "You have entered valid USERNAME";
     }
 
     @GetMapping("/user-cpf/{cpf}")
@@ -39,7 +39,7 @@ public class UserController {
             throw new CPFException(cpf);
         }
 
-        return "You have entered invalid CPF";
+        return "You have entered valid CPF";
 
     }
 
