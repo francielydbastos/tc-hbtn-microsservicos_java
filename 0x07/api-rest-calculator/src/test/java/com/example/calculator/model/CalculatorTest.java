@@ -2,6 +2,7 @@ package com.example.calculator.model;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -10,7 +11,7 @@ public class CalculatorTest {
 
     private static Calculator calculator;
 
-    @BeforeAll
+    @BeforeEach
     public static void setup() {
         calculator = new Calculator();
     }
